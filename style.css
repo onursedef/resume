@@ -48,4 +48,12 @@
   .logo {
     @apply md:w-fit aspect dark:fill-black w-36;
   }
+
+  .content {
+    @apply md:col-span-8 col-span-1 -mt-2;
+  }
+
+  .ed-sum {
+    @apply md:col-span-4 col-span-1;
+  }
 }
