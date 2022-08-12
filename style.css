@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.aspect {
+  aspect-ratio: 1 / 1;
+}
+
+@layer component {
+  .subheading {
+    @apply col-span-12 mt-4 tracking-widest uppercase font-semibold text-sm text-neutral-500;
+  }
+
+  .subheading-sm {
+    @apply font-semibold text-xs uppercase text-neutral-500 mt-2 tracking-widest;
+  }
+
+  .grid-full {
+    @appy col-span-12 mt-2;
+  }
+
+  .grid-8 {
+    @apply col-span-8;
+  }
+  .grid-4 {
+    @apply col-span-4;
+  }
+
+  .heading {
+   @apply font-semibold text-xl col-span-12; 
+  }
+
+  .link {
+    @apply dark:hover:text-violet-400 hover:text-violet-700 w-fit;
+  }
+
+  .logo {
+    @apply w-fit aspect dark:fill-black;
+  }
+}
