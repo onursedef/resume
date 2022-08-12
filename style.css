@@ -7,8 +7,19 @@
 }
 
 @layer component {
+  .page {
+    @apply grid md:grid-cols-12 grid-cols-1 gap-2 mx-auto md:w-[21cm] md:my-14 md:h-fit w-full h-fit  dark:shadow-2xl bg-neutral-300 dark:bg-neutral-800 px-8 py-8 place-items-start;
+  }
+
+  .left-items {
+    @apply md:col-span-11 col-span-1 mt-1;
+  }
+
+  .left-grid {
+    @apply grid md:grid-cols-12 col-span-1 gap-4;
+  }
   .subheading {
-    @apply col-span-12 mt-4 tracking-widest uppercase font-semibold text-sm text-neutral-500;
+    @apply md:col-span-12 col-span-1 mt-4 tracking-widest uppercase font-semibold text-sm text-neutral-500;
   }
 
   .subheading-sm {
@@ -16,18 +27,18 @@
   }
 
   .grid-full {
-    @appy col-span-12 mt-2;
+    @appy md:col-span-12 col-span-1 mt-2;
   }
 
   .grid-8 {
-    @apply col-span-8;
+    @apply md:col-span-8 col-span-1;
   }
   .grid-4 {
-    @apply col-span-4;
+    @apply md:col-span-4 col-span-1;
   }
 
   .heading {
-   @apply font-semibold text-xl col-span-12; 
+   @apply font-semibold text-xl md:col-span-12 col-span-1; 
   }
 
   .link {
@@ -35,6 +46,6 @@
   }
 
   .logo {
-    @apply w-fit aspect dark:fill-black;
+    @apply md:w-fit aspect dark:fill-black w-36;
   }
 }
