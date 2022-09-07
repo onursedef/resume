@@ -50,7 +50,7 @@
   }
 
   .content {
-    @apply md:col-span-8 col-span-1 -mt-2 h-full;
+    @apply md:col-span-8 col-span-1 -mt-2;
   }
 
   .ed-sum {
